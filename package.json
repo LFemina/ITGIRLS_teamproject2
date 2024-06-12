@@ -1,0 +1,29 @@
+{
+  "name": "itgirls_teamproject2",
+  "version": "0.0.1",
+  "description": "Frontend 88 group project (HTML+CSS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-prod": "sass ./assets/sass/index.sass ./assets/styles/styles.css",
+    "build-watch": "sass --watch ./assets/sass/index.sass ./assets/styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LFemina/ITGIRLS_teamproject2.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "frontend"
+  ],
+  "author": "Frontend 88",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LFemina/ITGIRLS_teamproject2/issues"
+  },
+  "homepage": "https://github.com/LFemina/ITGIRLS_teamproject2#readme",
+  "devDependencies": {
+    "sass": "^1.77.5"
+  }
+}
