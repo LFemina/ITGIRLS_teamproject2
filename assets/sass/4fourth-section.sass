@@ -1,0 +1,107 @@
+.fourth-section
+    display: flex
+    width: 100%
+
+    .fourth
+        &__tittle_desk,
+        &__btn_desk
+            display: none
+
+.stage
+    display: flex
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 2rem
+
+    &__consultation,
+    &__goals,
+    &__posture,
+    &__start
+        display: flex
+        width: 100%
+        align-items: center
+        align-content: center
+        justify-content: center
+        flex-direction: column
+
+.circle
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 10rem
+    height: 10rem
+    line-height: 10rem
+    font-size: 1.875rem
+    text-align: center
+    border-radius: 50%
+    border: 0.375rem solid #d6c6f5
+    margin-top: 1rem
+
+.arrow
+    position: relative
+    top: 0
+    width: 5.375rem
+    height: 0.2rem
+    background-color: #d6c6f5
+    left: 0
+    display: block
+
+    &::after
+        content: ''
+        position: absolute
+        width: 2.5rem
+        height: 0.2rem
+        top: -0.7975rem
+        right: -0.5rem
+        background-color: #d6c6f5
+        transform: rotate(45deg)
+
+    &::before
+        content: ''
+        position: absolute
+        width: 2.5rem
+        height: 0.2rem
+        top: 0.7975rem
+        right: -0.5rem
+        background-color: #d6c6f5
+        transform: rotate(-45deg)
+
+    &
+        transform: rotate(90deg)
+
+@media screen and (min-width: 700px)
+    .fourth-section
+        display: flex
+        flex-direction: column
+        text-align: center
+        gap: 4rem
+
+        .fourth
+            &__tittle_desk,
+            &__btn_desk
+                display: inline
+
+    .stage
+        display: flex
+        width: 100%
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        gap: 2rem
+
+        &__tittle_mobile,
+        &__btn_mobile
+            display: none
+
+    .arrow
+        transform: rotate(0deg)
+
+        position: relative
+        top: 0
+        width: 20.375rem
+        height: 0.2rem
+        background-color: #d6c6f5
+        left: 0
+        display: block
