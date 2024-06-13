@@ -10,20 +10,29 @@
 
 <body class="container">
     <header class="header">
-        <img class="header_logo" src="./assets/images/logo.svg" alt="logo">
-        <nav class="header_nav">
-            <a href="#">ОБО МНЕ</a>
-            <a href="#">СЕРТИФИКАТЫ</a>
-            <a href="#">КАК Я РАБОТАЮ</a>
-            <a href="#">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a>
-            <a href="#">КОНТАКТЫ</a>
-        </nav>
-        <nav class="header_cocial">
-            <!--Здесь будут иконки соц.сетей-->
-            <a href="https://t.me/Maks_anastasiya" target="_blank">TG</a>
-            <a href="https://www.instagram.com/stacey__fitness" target="_blank">IG</a>
-            <a href="https://wa.me/79119109880" target="_blank">WA</a>
-        </nav>
+        <div class="header_logo">
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="header_nav">
+            <nav class="nav-desktop">
+                <ul class="menu-desktop">
+                    <li class="menu-desktop_item"><a class="menu-desktop_link" href="#secaboutme">ОБО МНЕ</a></li>
+                    <li class="menu-desktop_item"><a class="menu-desktop_link" href="#seccertificates">СЕРТИФИКАТЫ</a>
+                    </li>
+                    <li class="menu-desktop_item"><a class="menu-desktop_link" href="#secwork">КАК Я РАБОТАЮ</a></li>
+                    <li class="menu-desktop_item"><a class="menu-desktop_link" href="#secreviews">ОТЗЫВЫ И
+                            РЕЗУЛЬТАТЫ</a></li>
+                    <li class="menu-desktop_item"><a class="menu-desktop_link" href="#seccontacts">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_social">
+            <nav class="cocial-desktop">
+                <a class="cocial-desktop_item" href="https://t.me/Maks_anastasiya" target="_blank">TG</a>
+                <a class="cocial-desktop_item" href="https://www.instagram.com/stacey__fitness" target="_blank">IG</a>
+                <a class="cocial-desktop_item" href="https://wa.me/79119109880" target="_blank">WA</a>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
@@ -43,7 +52,7 @@
                 <a href="#" class="btn">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
             </section>
         </section>
-        <section class="second-section">
+        <section class="second-section" id="secaboutme">
             <h1>Обо мне</h1>
             <div>
                 <h2>Профессиональное образование</h2>
@@ -59,12 +68,12 @@
                     программе контроля за режимом тренировок до достижения оптимального результата.</p>
             </div>
         </section>
-        <section class="third-section">
+        <section class="third-section" id="seccertificates">
             <h1>Дипломы и сертификаты</h1>
             <!--Здесь будут сертификаты-->
             <img src="./assets/images/certificate1.png" alt="certificate">
         </section>
-        <section class="fourth-section">
+        <section class="fourth-section" id="secwork">
             <h1>Как я работаю</h1>
             <div>
                 <button>1</button>
@@ -114,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section class="sixth-section">
+        <section class="sixth-section" id="secreviews">
             <h1>Отзывы и результаты клиентов</h1>
             <div class="eighth-section_review">
                 <div class="eighth-section_review-content">
@@ -151,7 +160,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="seccontacts">
         <h1>Контакты</h1>
         <div>
             <p>Записаться на консультацию и занятия вы можете любым удобным для вас способом. Буду рада обратной связи и

@@ -1,1 +1,62 @@
+.header
+    font-size: calc(16 / 375 * 100vw)
+    position: relative
+    background: #d6c6f5
+    height: 11.875rem
 
+    &_nav, &_social
+        display: none
+
+.logo
+    height: auto
+    display: block
+    max-width: 18.75rem
+
+@media screen and (min-width: 700px)
+    .header
+        font-size: calc(16 / 1440 * 100vw)
+        display: flex
+        justify-content: space-between
+        height: 6.25rem
+        padding: 40px
+
+        &_nav, &_social
+            display: flex
+
+        &_nav-desktop
+            display: inline-block
+
+    .logo
+        max-height: 5rem
+
+    .menu-desktop
+        padding: 0
+        margin: 0
+        list-style: none
+
+        &_link
+            text-decoration: none
+            color: black
+
+            &:visited
+                color: gray
+
+            &:hover
+                text-decoration: underline
+
+        &_item
+            display: inline-block
+
+    .cocial-desktop
+        padding: 0
+        margin: 0
+
+        &_item
+            text-decoration: none
+            color: black
+
+            &:visited
+                color: gray
+
+            &:hover
+                text-decoration: underline
