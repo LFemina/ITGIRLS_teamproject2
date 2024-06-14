@@ -10,24 +10,30 @@
 
 <body class="container">
     <header class="header">
-        <img class="header_logo" src="./assets/images/logo.svg" alt="logo">
-        <nav class="header_nav">
-            <a href="#">ОБО МНЕ</a>
-            <a href="#">СЕРТИФИКАТЫ</a>
-            <a href="#">КАК Я РАБОТАЮ</a>
-            <a href="#">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a>
-            <a href="#">КОНТАКТЫ</a>
-        </nav>
-        <nav class="header_cocial">
-            <!--Здесь будут иконки соц.сетей-->
-            <a href="https://t.me/Maks_anastasiya" target="_blank">TG</a>
-            <a href="https://www.instagram.com/stacey__fitness" target="_blank">IG</a>
-            <a href="https://wa.me/79119109880" target="_blank">WA</a>
-        </nav>
+        <div class="header_logo">
+            <img class="logo" src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="header_nav">
+            <nav class="nav-desctop">
+                <a class="nav-desktop_item" href="#aboutme">ОБО МНЕ</a>
+                <a class="nav-desktop_item" href="#certificates">СЕРТИФИКАТЫ</a>
+                <a class="nav-desktop_item" href="#work">КАК Я РАБОТАЮ</a>
+                <a class="nav-desktop_item" href="#reviews">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a>
+                <a class="nav-desktop_item" href="#contacts">КОНТАКТЫ</a>
+            </nav>
+        </div>
+        <div class="header_social">
+            <nav class="social-desktop">
+                <!--Здесь будут иконки соц.сетей-->
+                <a class="social-desktop_item" href="https://t.me/Maks_anastasiya" target="_blank">TG</a>
+                <a class="social-desktop_item" href="https://www.instagram.com/stacey__fitness" target="_blank">IG</a>
+                <a class="social-desktop_item" href="https://wa.me/79119109880" target="_blank">WA</a>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
-        <section class="first-section">
+        <section class="first-section" id="aboutme">
             <div>
                 <img src="./assets/images/photo1.jpg" alt="фото">
             </div>
@@ -46,24 +52,25 @@
         <!--Начало секции "Обо мне"-->
         <section class="second-section">
             <h1 class="title">Обо мне</h1>
-        <div class="second-section-conteiner-content1">
-            <img class="second-section-img" src="assets\images\checkmark.png" alt="Checkmark">
-            <h2>Профессиональное образование</h2>
-            <p class="ui-font_p">Являюсь сертифицированным персональным тренером FPA. <br>
-            Закончила обучение в школе Анны Ворониной Crow School. <br> 
-            Прошла обучение CAFS (функционально-прикладной науке) от Gray Institute USA. <br>
-            Повышение квалификации работы с гирями и TRX.</p>
-        </div>
-        <div class="second-section-conteiner-content2">
-            <img class="second-section-img" src="assets\images\checkmark.png" alt="Checkmark">
-            <h2>Опыт и гарантия результата</h2>
-            <p class="ui-font_p">Свою тренерскую деятельность начала в 2014 году в рядах инструкторов групповых программ. <br>
-            Гибкость в индивидуальном подходе к каждому клиенту - мой приоритет. Веду каждого клиента по
-            программе контроля за режимом тренировок до достижения оптимального результата.</p>
-        </div>
-    </section>
-    <!--Конец секции "Обо мне"-->
-        <section class="third-section">
+            <div class="second-section-conteiner-content1">
+                <img class="second-section-img" src="assets\images\checkmark.png" alt="Checkmark">
+                <h2>Профессиональное образование</h2>
+                <p class="ui-font_p">Являюсь сертифицированным персональным тренером FPA. <br>
+                    Закончила обучение в школе Анны Ворониной Crow School. <br>
+                    Прошла обучение CAFS (функционально-прикладной науке) от Gray Institute USA. <br>
+                    Повышение квалификации работы с гирями и TRX.</p>
+            </div>
+            <div class="second-section-conteiner-content2">
+                <img class="second-section-img" src="assets\images\checkmark.png" alt="Checkmark">
+                <h2>Опыт и гарантия результата</h2>
+                <p class="ui-font_p">Свою тренерскую деятельность начала в 2014 году в рядах инструкторов групповых
+                    программ. <br>
+                    Гибкость в индивидуальном подходе к каждому клиенту - мой приоритет. Веду каждого клиента по
+                    программе контроля за режимом тренировок до достижения оптимального результата.</p>
+            </div>
+        </section>
+        <!--Конец секции "Обо мне"-->
+        <section class="third-section" id="certificates">
             <h1>Дипломы и сертификаты</h1>
             <div class="carousel-container">
                 <div class="carousel-container__track">
@@ -90,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section class="fourth-section">
+        <section class="fourth-section" id="work">
             <h1 class="fourth__tittle_desk">Как я работаю</h1>
             <div class="stage">
                 <h1 class="stage__tittle_mobile">Как я работаю</h1>
@@ -165,7 +172,7 @@
                 </div>
             </div>
         </section>
-        <section class="sixth-section">
+        <section class="sixth-section" id="reviews">
             <h1>Отзывы и результаты клиентов</h1>
             <div class="eighth-section_review">
                 <div class="eighth-section_review-content">
@@ -202,7 +209,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <h1>Контакты</h1>
         <div>
             <p>Записаться на консультацию и занятия вы можете любым удобным для вас способом. Буду рада обратной связи и
