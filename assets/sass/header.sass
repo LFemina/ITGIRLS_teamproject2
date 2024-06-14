@@ -1,1 +1,55 @@
+.header
+    position: relative
+    background: #d6c6f5
+    height: 190px
 
+    &_nav, &_social
+        display: none
+
+    &_logo
+        height: auto
+        display: block
+        max-width: 300px !important
+        padding: 20px
+
+@media screen and (min-width: 700px)
+    .header
+        display: flex
+        justify-content: space-between
+        height: 100px
+
+        &_nav, &_social
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            padding: 40px
+
+        &_nav
+            width: 1092px
+            margin-top: 10px
+
+        &_social
+            width: 210px
+
+        &_logo
+            padding: 0
+            margin-left: 40px
+            margin-top: 13px
+            width: 110px
+
+    .img_logo
+        max-height: 80px
+
+    .img-social
+        width: 30px
+
+    .nav-desktop_item,
+    .social-desktop_item
+        text-decoration: none
+        color: black
+
+        &:hover
+            text-decoration: underline
+
+        &:visited
+            color: gray

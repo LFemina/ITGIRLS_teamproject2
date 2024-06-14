@@ -10,24 +10,29 @@
 
 <body class="container">
     <header class="header">
-        <img class="header_logo" src="./assets/images/logo.svg" alt="logo">
-        <nav class="header_nav">
-            <a href="#">ОБО МНЕ</a>
-            <a href="#">СЕРТИФИКАТЫ</a>
-            <a href="#">КАК Я РАБОТАЮ</a>
-            <a href="#">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a>
-            <a href="#">КОНТАКТЫ</a>
-        </nav>
-        <nav class="header_cocial">
-            <!--Здесь будут иконки соц.сетей-->
-            <a href="https://t.me/Maks_anastasiya" target="_blank">TG</a>
-            <a href="https://www.instagram.com/stacey__fitness" target="_blank">IG</a>
-            <a href="https://wa.me/79119109880" target="_blank">WA</a>
-        </nav>
+        <div class="header_logo">
+            <img class="img_logo" src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="header_nav">
+            <a class="nav-desktop_item" href="#aboutme">ОБО МНЕ</a>
+            <a class="nav-desktop_item" href="#certificates">СЕРТИФИКАТЫ</a>
+            <a class="nav-desktop_item" href="#work">КАК Я РАБОТАЮ</a>
+            <a class="nav-desktop_item" href="#reviews">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a>
+            <a class="nav-desktop_item" href="#contacts">КОНТАКТЫ</a>
+        </div>
+        <div class="header_social">
+            <a class="social-desktop_item" href="https://t.me/Maks_anastasiya" target="_blank"><img class="img-social"
+                    src="./assets/images/tg.png" alt="telegram"></a>
+            <a class="social-desktop_item" href="https://www.instagram.com/stacey__fitness" target="_blank"><img
+                    class="img-social" src="./assets/images/ig.png" alt="instagram"></a>
+            <a class="social-desktop_item" href="https://wa.me/79119109880" target="_blank"><img class="img-social"
+                    src="./assets/images/wa.png" alt="whatsapp"></a>
+        </div>
     </header>
 
     <main class="main">
-        <section class="first-section">
+        <!-- Начало секции №1 с фото и фио -->
+        <section class="first-section" id="aboutme">
             <div>
                 <img src="./assets/images/photo1.jpg" alt="фото">
             </div>
@@ -40,9 +45,10 @@
                     <li>Специалист по движению Polestar Pilates</li>
                 </ul>
                 </p>
-                <a href="#" class="btn">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
+                <a href="#" class="btn first__btn-ui">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
             </section>
         </section>
+        <!-- Конец секции №1 с фото и фио -->
         <!--Начало секции "Обо мне"-->
         <section class="second-section">
             <h1 class="second-section-title">Обо мне</h1>
@@ -72,7 +78,7 @@
             <!--Здесь будут сертификаты-->
             <img src="./assets/images/certificate1.png" alt="certificate">
         </section>
-        <section class="fourth-section">
+        <section class="fourth-section" id="work">
             <h1 class="fourth__tittle_desk">Как я работаю</h1>
             <div class="stage">
                 <h1 class="stage__tittle_mobile">Как я работаю</h1>
@@ -109,9 +115,9 @@
                     </div>
                     <p class="stage__text">начинаем тренироваться и вместе идём к результату</p>
                 </div>
-                <a href="#" class="btn stage__btn_mobile">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
+                <a href="#" class="btn stage__btn_mobile fourth__btn-ui">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
             </div>
-            <a href="#" class="btn fourth__tittle_desk">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
+            <a href="#" class="btn fourth__tittle_desk fourth__btn-ui">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
         </section>
         <section class="fifth-section">
             <h1>Что нужно для онлайн занятий</h1>
@@ -147,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section class="sixth-section">
+        <section class="sixth-section" id="reviews">
             <h1>Отзывы и результаты клиентов</h1>
             <div class="eighth-section_review">
                 <div class="eighth-section_review-content">
@@ -184,7 +190,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <h1>Контакты</h1>
         <div>
             <p>Записаться на консультацию и занятия вы можете любым удобным для вас способом. Буду рада обратной связи и
