@@ -1,36 +1,39 @@
 .carousel-container
     position: relative
     overflow: hidden
-    width: 100%
+    max-width: 100%
 
     &__track
-        max-width: 75%
+        position: relative
+        max-width: 100%
         display: flex
         transition: transform 0.3s ease
 
         &-item
-            min-width: 100%
+            max-width: 100%
             box-sizing: border-box
 
     &__button-container
         position: absolute
-        width: 50px
-        height: 50px
-        border-radius: 50%
-        background-color: rgb(232, 232, 232)
-        border: none
-        cursor: pointer
+        top: 40%
+
+        width: 100%
         display: flex
-        justify-content: center
+        justify-content: space-between
         align-items: center
         z-index: 1
+        pointer-events: none
 
         img
-            width: 40%
+            max-width: 50%
 
-.prev-button
-    top: 45%
-    left: 1%
-.next-button
-    top: 45%
-    left: 65%
+.prev-button, .next-button
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    border: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    pointer-events: all
