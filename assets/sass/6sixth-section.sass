@@ -1,0 +1,56 @@
+.sixth-section
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    text-align: center
+    height: 75rem
+    width: 100%
+
+.reviews-content
+    background: #d6c6f5
+    height: 60.25rem
+    width: 100%
+    display: flex
+    flex-direction: column
+    text-align: center
+    justify-content: center
+    align-items: center
+    gap: 1.875rem
+
+    &_block
+        width: 20.9375rem
+
+    &_text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 15rem
+        background: white
+        padding-inline: 0.9375rem
+
+@media screen and (min-width: 700px)
+    .sixth-section
+        height: 630px
+
+        &_title
+            height: 120px
+            padding-top: 35px
+
+    .reviews-content
+        flex-direction: row
+        height: 477px
+        padding-top: 90px
+        padding-bottom: 75px
+
+        &_block
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 330px
+            width: 365px
+
+        &_text
+            height: 300px
+            justify-content: flex-start
+            padding: 25px
