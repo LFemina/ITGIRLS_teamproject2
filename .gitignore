@@ -1,3 +1,8 @@
 assets/styles/*
 node_modules/*
 /.idea/
+# style.css
+# style.css.map
+*temp*
+.vscode
+.DS_Store
