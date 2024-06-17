@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="carousel.js" defer></script>
     <title>ITGIRLS TEAM PROJECT 2</title>
 </head>
 
@@ -73,7 +74,48 @@
         <section class="third-section" id="certificates">
             <h1 class="ui-text__h1">Дипломы и сертификаты</h1>
             <!--Здесь будут сертификаты-->
-            <img src="./assets/images/certificate1.png" alt="certificate">
+            
+<section class="third-section" id="certificates">
+    <h1>Дипломы и сертификаты</h1>
+    <div class="carousel-container" data-carousel>
+        <button class="prev-button" data-carousel-button="prev">
+            <img class="carousel-button-img" src="./assets/images/left-arrow.svg" alt="left-arrow">
+        </button>
+        <button class="next-button" data-carousel-button="next">
+            <img class="carousel-button-img" src="./assets/images/right-arrow.svg" alt="right-arrow">
+        </button>
+        <ul class="slide-container" data-slides>
+        <li class="slide" data-active>
+            <img class="carousel-container__track-item" 
+            src="./assets/images/certificates/certificate-addedu.jpg" alt="certificate-addedu">
+        </li>
+        <li class="slide">
+            <img class="carousel-container__track-item"
+            src="./assets/images/certificates/diploma-retraining.jpg" alt="diploma-retraining">
+        </li>
+        <li class="slide">
+            <img class="carousel-container__track-item" 
+            src="./assets/images/certificates/certificate-cafs.jpg" alt="certificate-cafs">
+        </li>
+        <li class="slide">
+            <img class="carousel-container__track-item"
+            src="./assets/images/certificates/certificate-crowschool.jpg" alt="certificate-crowschool">
+        </li>
+        <li class="slide">
+            <img class="carousel-container__track-item" 
+            src="./assets/images/certificates/certificate-polestar.jpg" alt="certificate-polestar">
+        </li>
+        <li class="slide">
+            <img class="carousel-container__track-item" 
+            src="./assets/images/certificates/certificate-scoliosis.jpg" alt="certificate-scoliosis">
+        </li>
+        <li class="slide">
+            <img class="carousel-container__track-item" 
+            src="./assets/images/certificates/diploma-truemotion.jpg" alt="diploma-truemotion">
+        </li>
+    </ul>
+    </div>
+</section>
         </section>
         <section class="fourth-section" id="work">
             <h1 class="fourth__tittle_desk ui-text__h1">Как я работаю</h1>
