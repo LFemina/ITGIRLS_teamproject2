@@ -1,2 +1,61 @@
+.first-section,
+.first-section div,
+.first-section__content,
+.btn,
+section,
+.ui-text__h-1sect,
+.ui-text__p-1sect,
+ul,
+img
+ // border: solid 1px red
+
 .first-section
  background-color: #D6C6F5
+ display: flex
+ flex-direction: column-reverse
+ align-items: center
+ width: 100vw
+ // gap: 20px
+ gap: 1.25rem
+
+ &__content
+  display: flex
+  flex-direction: column
+  align-items: center
+  // gap: 20px
+  gap: 1.25rem
+  // padding-top: 20px
+  padding-top: 1.25rem
+
+ &__content-header,
+ &__content-list
+  margin: 0
+
+ &__photo-cont
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-end
+
+ &__photo-img
+  width: 65%
+
+@media screen and (min-width: 700px)
+ .first-section
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  width: 100vw
+  gap: 100px
+
+  &__content
+   display: flex
+   flex-direction: column
+   align-items: flex-start
+   // flex-wrap: nowrap
+   white-space: nowrap
+   gap: 30px
+
+  &__photo-img
+   width: 80%
