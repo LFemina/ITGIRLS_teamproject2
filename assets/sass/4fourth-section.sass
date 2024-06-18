@@ -72,7 +72,10 @@
 
 @media screen and (min-width: 700px)
     .fourth-section
-        gap: 4rem
+        gap: 64px
+
+    .fourth__button
+        width: 382px
 
     .stage
         display: flex
@@ -86,13 +89,34 @@
         &__goals,
         &__posture,
         &__start
-            width: 13.75rem
+            width: 220px
+
+    .circle
+        width: 160px
+        height: 160px
+        line-height: 160px
+        text-align: center
+        border-radius: 50%
+        border: 10px solid #d6c6f5
+        margin-top: 16px
 
     .arrow
         transform: rotate(0deg)
         position: relative
         top: 0
-        width: 16.4375rem
-        height: 0.2rem
+        width: 263px
+        height: 3px
         background-color: #000000
         left: 0
+
+        &::after
+            width: 6px
+            height: 2px
+            top: -2px
+            right: -1px
+
+        &::before
+            width: 7px
+            height: 2px
+            top: 2px
+            right: -2px
