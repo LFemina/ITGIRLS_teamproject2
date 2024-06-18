@@ -4,15 +4,24 @@
 
     &__text
         padding-top: 1rem
-        padding-bottom: 1rem
-
-    &__contacts
-        padding-bottom: 1rem
+        padding-bottom: 3rem
 
     &__social-link
         width: 1.875rem
         height: 1.875rem
 
-.footer__contacts-mail,
-.footer__contacts-phone
-    text-decoration: none
+@media screen and (min-width: 700px)
+    .footer
+        background-color: #9a76a5
+        padding: 96px 112px
+        display: flex
+        flex-direction: column
+
+        &__text
+            padding-top: 16px
+            padding-bottom: 48px
+            width: 40%
+
+        &__social-link
+            width: 30px
+            height: 30px
