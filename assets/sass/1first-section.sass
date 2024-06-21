@@ -40,23 +40,33 @@ img
 
   &__photo-img
     width: 65%
+    min-width: 10.4375rem
+    min-height: 10.4375rem
+    max-width: 31.25rem
+    max-height: 31.25rem
+    display: block
 
 @media screen and (min-width: 700px)
-.first-section
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: center
-  width: 100vw
-  gap: 100px
-
-  &__content
+  .first-section
     display: flex
-    flex-direction: column
-    align-items: flex-start
-    flex-wrap: nowrap
-    white-space: nowrap
-    gap: 40px
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    width: 100vw
+    gap: 100px
 
-  &__photo-img
-    width: 90%
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      flex-wrap: nowrap
+      white-space: nowrap
+      gap: 40px
+
+    &__photo-img
+      width: 90%
+      min-width: 167px
+      min-height: 167px
+      max-width: 500px
+      max-height: 500px
+      display: block
