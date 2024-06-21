@@ -4,12 +4,12 @@
     justify-content: center
     align-content: center
     text-align: center
-    height: 75rem
+    height: 109.75rem
     width: 100%
 
 .reviews-content
     background: #d6c6f5
-    height: 60.25rem
+    height: 95rem
     width: 100%
     display: flex
     flex-direction: column
@@ -19,19 +19,22 @@
     gap: 1.875rem
 
     &_block
-        width: 20.9375rem
+        max-width: 21.875rem
+        max-height: 21.875rem
+        overflow: hidden
+        background: white
 
     &_text
         display: flex
         flex-direction: column
         justify-content: center
-        height: 15rem
-        background: white
-        padding-inline: 0.9375rem
+        width: 100%
+        height: 100%
 
 @media screen and (min-width: 700px)
     .sixth-section
         height: 630px
+        width: 100%
 
         &_title
             height: 120px
@@ -39,18 +42,12 @@
 
     .reviews-content
         flex-direction: row
+        align-items: stretch
         height: 477px
         padding-top: 90px
         padding-bottom: 75px
+        gap: 30px
 
         &_block
-            display: flex
-            flex-direction: column
-            justify-content: space-between
-            height: 330px
-            width: 365px
-
-        &_text
-            height: 300px
-            justify-content: flex-start
-            padding: 25px
+            max-width: 343px
+            max-height: 343px
