@@ -1,55 +1,59 @@
 .header
     position: relative
+    display: flex
+    align-items: flex-start
     background: #d6c6f5
-    height: 190px
+    height: 11.875rem
 
-    &_nav, &_social
+    &__nav, &__social
         display: none
 
-    &_logo
+    &__logo-wrapper
         height: auto
         display: block
-        max-width: 300px !important
-        padding: 20px
+        padding: 1.25rem
+        text-decoration: none
+
+    &__logo
+        width: 6.25rem
+        display: block
 
 @media screen and (min-width: 700px)
     .header
-        display: flex
+        align-items: center
         justify-content: space-between
         height: 100px
+        padding-inline: 40px
 
-        &_nav, &_social
+        &__nav, &__social
             display: flex
-            flex-direction: row
             justify-content: space-between
-            padding: 40px
 
-        &_nav
-            width: 1092px
-            margin-top: 10px
+        &__nav
+            gap: 130px
 
-        &_social
-            width: 210px
+        &__nav-item,
+        &__social-item
+            text-decoration: none
 
-        &_logo
+            &:hover
+                text-decoration: underline
+
+            &:visited
+                color: gray
+
+        &__social-item
+            display: block
+
+        &__social
+            gap: 14px
+
+            & img
+                width: 30px
+                display: block
+
+        &__logo-wrapper
             padding: 0
-            margin-left: 40px
-            margin-top: 13px
-            width: 110px
 
-    .img_logo
-        max-height: 80px
-
-    .img-social
-        width: 30px
-
-    .nav-desktop_item,
-    .social-desktop_item
-        text-decoration: none
-        color: black
-
-        &:hover
-            text-decoration: underline
-
-        &:visited
-            color: gray
+        &__logo
+            width: 80px
