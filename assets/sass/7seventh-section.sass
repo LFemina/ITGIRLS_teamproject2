@@ -1,12 +1,15 @@
+.seventh-section
+    padding: 1rem
+
 .carousel-container
     position: relative
     overflow: hidden
     height: 15rem
 
-    ul
-        margin: 0
-        padding: 0
-        list-style: none
+ul
+    margin: 0
+    padding: 0
+    list-style: none
 
 .prev-button, .next-button
     position: absolute
@@ -15,7 +18,7 @@
     border-radius: 50%
     border: none
     cursor: pointer
-    background-color: rgb(232, 232, 232)
+    background-color: #c5acf7
     display: flex
     justify-content: center
     align-items: center
@@ -40,12 +43,12 @@
     opacity: 0
     transition: opacity 0.5s ease
 
-    img
-        display: block
-        max-width: 90%
-        object-fit: cover
-        padding: 1rem
-        object-position: center
+img
+    display: block
+    max-width: 90%
+    object-fit: cover
+    padding: 1rem
+    object-position: center
 
 .slide[data-active]
     opacity: 1
@@ -74,25 +77,24 @@
     .carousel-button-img
         width: 12px
 
+    .totop
+        width: 12px
+
 /* КНОПКА ВВЕРХ */
-.totop 
-  position: fixed
-  bottom: 10px
-  right: 10px
-  text-decoration: none
-  color: #d6c6f5
-  z-index: 4
+.totop
+    position: fixed
+    bottom: 10px
+    right: 10px
+    text-decoration: none
+    color: #c5acf7
+    z-index: 4
 
+.totop:hover
+    color: #582b65
 
-.totop:hover 
-  color: #9a76a5
-
-
-
-.totop i 
-  font-size: 40px
-
-position: sticky
-scroll-behavior: smooth
+.totop i
+    font-size: 40px
+    position: sticky
+    scroll-behavior: smooth
 
 /* КНОПКА ВВЕРХ */
