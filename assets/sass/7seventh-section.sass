@@ -1,27 +1,76 @@
-#result
-  position: absolute
-  top: 10px
-  left: 60px
-  overflow: hidden
-  height: 150px
-  width: 600px
+.carousel-container
+    position: relative
+    overflow: hidden
+    height: 15rem
 
-#result img
-  position: absolute
-  top: 0px
-  height: 150px
-  width: 150px
-  cursor: pointer
-  overflow: hidden
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
 
-#carouselLeft
-  position: absolute
-  top: 60px
-  left: 0px
-  cursor: pointer 
+.prev-button, .next-button
+    position: absolute
+    width: 1.5rem
+    height: 1.5rem
+    border-radius: 50%
+    border: none
+    cursor: pointer
+    background-color: rgb(232, 232, 232)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 100
+    top: 40%
 
-#carouselRight
-  position: absolute
-  top: 60px
-  left: 540px
-  cursor: pointer
+.prev-button
+    left: 3%
+
+.next-button
+    right: 3%
+
+.carousel-button-img
+    width: 0.5rem
+
+.slide
+    position: absolute
+    inset: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0
+    transition: opacity 0.5s ease
+
+    img
+        display: block
+        max-width: 90%
+        object-fit: cover
+        padding: 1rem
+        object-position: center
+
+.slide[data-active]
+    opacity: 1
+
+@media screen and (min-width: 700px)
+    .carousel-container
+        height: 530px
+    .slide
+        img
+            height: 530px
+            padding: 0
+
+    .prev-button
+        left: 20%
+
+    .next-button
+        right: 20%
+
+    .slide-container
+        height: 530px
+
+    .prev-button, .next-button
+        width: 40px
+        height: 40px
+
+    .carousel-button-img
+        width: 12px
+

@@ -271,20 +271,39 @@
         <!--Конец секции "Отзывы"-->
 
          <!--Начало секции "До и после"-->
- <section class="seventh-section">
+         <section class="seventh-section" id="results">
             <h1 class="ui-text__h1">До и после</h1>
-<div class="result">  
-            <img src="./assets/images/res1.jpg" alt="result">
-            <img src="./assets/images/res2.jpg" alt="result">
-            <img src="./assets/images/res3.jpg" alt="result">
-            <img src="./assets/images/res4.jpg" alt="result">
-           <img src="./assets/images/res5.jpg" alt="result">
-           <img src="./assets/images/res6.jpg" alt="result">
-</div>
-    <img class="carouselLeft" src="left-arrow.svg" alt="Left Arrow" />
-    <img class="carouselRight" src="right-arrow.svg" alt="Right Arrow" />
-  </section>
-         <!--Конец секции "До и после"-->
+<div class="carousel-container" data-carousel>
+                <button class="prev-button" data-carousel-button="prev">
+                    <img class="carousel-button-img" src="./assets/images/left-arrow.svg" alt="left-arrow">
+                </button>
+                <button class="next-button" data-carousel-button="next">
+                    <img class="carousel-button-img" src="./assets/images/right-arrow.svg" alt="right-arrow">
+                </button>
+           <ul class="slide-container" data-slides>
+                    <li class="slide">
+                        <img class="carousel-container__track-item"
+                        <img src="./assets/images/res1.jpg" alt="result">
+                    </li>
+                    <li class="slide" data-active>
+                        <img src="./assets/images/res2.jpg" alt="result">
+                    </li>
+                    <li class="slide">
+                        <img src="./assets/images/res3.jpg" alt="result">
+                    </li>
+                    <li class="slide">
+                       <img src="./assets/images/res4.jpg" alt="result">
+                    </li>
+                    <li class="slide">
+                        <img src="./assets/images/res5.jpg" alt="result">
+                    </li>
+                        <li class="slide">
+                        <img src="./assets/images/res6.jpg" alt="result">
+                    </li>
+                 </ul>
+            </div>
+        </section>
+        <!--Конец секции "До и после"-->
     </main>
 
     <footer class="footer" id="contacts">
