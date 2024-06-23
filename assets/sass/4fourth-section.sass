@@ -79,23 +79,72 @@
             width: 382px
 
         &-stage
-            display: flex
+            display: grid
+            grid-template-columns: 220px 200px 220px 200px 220px 200px 220px
+            grid-template-rows: 1fr
             width: 100%
             flex-direction: row
             justify-content: center
             align-items: center
             gap: 0
 
+            &__consultation
+                grid-column: 1/2
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
+            &__goals
+                grid-column: 3/4
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
+            &__posture
+                grid-column: 5/6
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
+            &__start
+                grid-column: 7/8
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
             &__consultation,
             &__goals,
             &__posture,
             &__start
                 width: 220px
+                display: grid
+                grid-template-rows: 190px 110px
 
     .circle
         width: 160px
         height: 160px
         line-height: 160px
+        justify-self: center
         text-align: center
         border-radius: 50%
         border: 10px solid #d6c6f5
@@ -121,3 +170,10 @@
             height: 2px
             top: 2px
             right: -2px
+
+        &_first
+            grid-area: 1/2/2/3
+        &_second
+            grid-area: 1/4/2/5
+        &_third
+            grid-area: 1/6/2/7
