@@ -1,6 +1,10 @@
 *
     box-sizing: border-box
 
+html
+    font-size: calc(16 / 390 * 100vw)
+    scroll-behavior: smooth
+
 body
     padding: 0
     margin: 0
@@ -16,7 +20,7 @@ body
 @media screen and (min-width: 700px)
     .container
         display: grid
-        grid-template-rows: 5% 1fr 20%
+        grid-template-rows: 100px 1fr 20%
 
     .header
         grid-row: 1/2

@@ -1,0 +1,101 @@
+.seventh-section
+    padding: 1rem
+
+.carousel-container
+    position: relative
+    overflow: hidden
+    height: 15rem
+
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+.prev-button, .next-button
+    position: absolute
+    width: 1.5rem
+    height: 1.5rem
+    border-radius: 50%
+    border: none
+    cursor: pointer
+    background-color: #c5acf7
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 100
+    top: 40%
+
+.prev-button
+    left: 3%
+
+.next-button
+    right: 3%
+
+.carousel-button-img
+    width: 0.5rem
+
+.slide
+    position: absolute
+    inset: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0
+    transition: opacity 0.5s ease
+
+img
+    display: block
+    max-width: 90%
+    object-fit: cover
+    padding: 1rem
+    object-position: center
+
+.slide[data-active]
+    opacity: 1
+
+@media screen and (min-width: 700px)
+    .carousel-container
+        height: 530px
+    .slide
+        img
+            height: 530px
+            padding: 0
+
+    .prev-button
+        left: 20%
+
+    .next-button
+        right: 20%
+
+    .slide-container
+        height: 530px
+
+    .prev-button, .next-button
+        width: 40px
+        height: 40px
+
+    .carousel-button-img
+        width: 12px
+
+
+
+/* КНОПКА ВВЕРХ */
+.totop
+    position: fixed
+    bottom: 10px
+    right: 10px
+    text-decoration: none
+    color: #c5acf7
+    z-index: 4
+
+.totop:hover
+    color: #582b65
+
+.totop i
+    font-size: 40px
+    position: sticky
+    scroll-behavior: smooth
+    
+/* @media screen and (min-width: 700px)
+        .totop
+        width: 12px

@@ -5,46 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="carousel.js" defer></script>
+    <script src="https://kit.fontawesome.com/3b773055fe.js" crossorigin="anonymous"></script>
     <title>ITGIRLS TEAM PROJECT 2</title>
 </head>
 
 <body class="container">
     <header class="header">
-        <div class="header_logo">
-            <img class="img_logo" src="./assets/images/logo.png" alt="logo">
-        </div>
-        <div class="header_nav">
-            <a class="nav-desktop_item ui-text__menu" href="#aboutme">ОБО МНЕ</a>
-            <a class="nav-desktop_item ui-text__menu" href="#certificates">СЕРТИФИКАТЫ</a>
-            <a class="nav-desktop_item ui-text__menu" href="#work">КАК Я РАБОТАЮ</a>
-            <a class="nav-desktop_item ui-text__menu" href="#reviews">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a>
-            <a class="nav-desktop_item ui-text__menu" href="#contacts">КОНТАКТЫ</a>
-        </div>
-        <div class="header_social">
-            <a class="social-desktop_item" href="https://t.me/Maks_anastasiya" target="_blank"><img class="img-social"
+<!--начало бургер меню-->
+<nav class="burger-menu">
+    <input id="menu__toggle" class="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+    <span></span>
+    </label>
+    <ul class="menu__box">
+        <li><a class="menu__item" href="#aboutme">ОБО МНЕ</a></li>
+        <li><a class="menu__item" href="#certificates">СЕРТИФИКАТЫ</a></li>
+        <li><a class="menu__item" href="#work">КАК Я РАБОТАЮ</a></li>
+        <li><a class="menu__item" href="#reviews">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a></li>
+        <li><a class="menu__item" href="#contacts">КОНТАКТЫ</a></li>
+            <li class="menu__box__icons">
+                <a class="social-desktop_item" href="https://t.me/Maks_anastasiya" target="_blank"><img class="menu__box__icons_img"
                     src="./assets/images/tg.png" alt="telegram"></a>
-            <a class="social-desktop_item" href="https://www.instagram.com/stacey__fitness" target="_blank"><img
-                    class="img-social" src="./assets/images/ig.png" alt="instagram"></a>
-            <a class="social-desktop_item" href="https://wa.me/79119109880" target="_blank"><img class="img-social"
-                    src="./assets/images/wa.png" alt="whatsapp"></a>
+                <a class="social-desktop_item" href="https://www.instagram.com/stacey__fitness" target="_blank"><img
+                    class="menu__box__icons_img" src="./assets/images/ig.png" alt="instagram"></a>
+    </li>
+    </ul>
+    </nav>
+<!--конец бургер меню-->
+        <a href="/" class="header__logo-wrapper">
+            <img class="header__logo" src="./assets/images/logo.png" alt="logo">
+        </a>
+        <div class="header__nav">
+            <a class="header__nav-item ui-text__menu" href="#aboutme">ОБО МНЕ</a>
+            <a class="header__nav-item ui-text__menu" href="#certificates">СЕРТИФИКАТЫ</a>
+            <a class="header__nav-item ui-text__menu" href="#work">КАК Я РАБОТАЮ</a>
+            <a class="header__nav-item ui-text__menu" href="#reviews">ОТЗЫВЫ И РЕЗУЛЬТАТЫ</a>
+            <a class="header__nav-item ui-text__menu" href="#contacts">КОНТАКТЫ</a>
+        </div>
+        <div class="header__social">
+            <a class="header__social-item" href="https://t.me/Maks_anastasiya" target="_blank"><img
+                    src="./assets/images/tg.png" alt="telegram"></a>
+            <a class="header__social-item" href="https://www.instagram.com/stacey__fitness" target="_blank"><img
+                    src="./assets/images/ig.png" alt="instagram"></a>
         </div>
     </header>
 
     <main class="main">
         <!-- Начало секции №1 с фото и фио -->
         <section class="first-section" id="aboutme">
-            <div>
-                <img src="./assets/images/photo1.jpg" alt="фото">
+            <div class="first-section__photo-cont">
+                <img class="first-section__photo-img" src="./assets/images/photo2_cropped.jpg" alt="фото">
             </div>
-            <section class="first-section_content">
-                <h1 class="ui-text__h-1sect">Анастасия Максименко</h1>
-                <p>
-                <ul>
+            <section class="first-section__content">
+                <h1 class="first-section__content-header ui-text__h-1sect">Анастасия Максименко</h1>
+                <ul class="first-section__content-list">
                     <li class="ui-text__p-1sect">Фитнес-тренер</li>
                     <li class="ui-text__p-1sect">Специалист по биомеханике и осанке</li>
                     <li class="ui-text__p-1sect">Специалист по движению Polestar Pilates</li>
                 </ul>
-                </p>
                 <a href="#" class="btn ui-btn__1sect">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
             </section>
         </section>
@@ -53,143 +72,241 @@
         <section class="second-section">
             <h1 class="title ui-text__h1">Обо мне</h1>
             <div class="second-section-conteiner-content1">
-                <img class="second-section-img" src="assets\images\checkmark.png" alt="Checkmark">
-                <h2 class="ui-text__h-2sect">Профессиональное образование</h2>
-                <p class="ui-text__p-2sect">Являюсь сертифицированным персональным тренером FPA. <br>
-                    Закончила обучение в школе Анны Ворониной Crow School. <br>
-                    Прошла обучение CAFS (функционально-прикладной науке) от Gray Institute USA. <br>
-                    Повышение квалификации работы с гирями и TRX.</p>
+                <div class="checkmark-h2-box">
+                    <img class="second-section-img" src="assets\images\checkmark-svg.svg" alt="Checkmark">
+                    <h2 class="ui-text__h-2sect">Мой опыт</h2>
+                </div>
+                <div class="second-section-conteiner-content-text">
+                    <p class="ui-text__p-2sect"> Моя жизнь с детства была связана с движением. Всё началось в 4 года ,
+                        когда мама меня записала на первую тренировку по танцам и так я посвятила хореографии около 13
+                        лет. Спустя время любовь к движению и спорту привела меня в тренажерный зал и профессию
+                        персонального тренера. Более 5 лет я работаю с клиентами очно, такой опыт и насмотреность
+                        позволили мне с 2023 выйти в онлайн ведение тренировок, не потеряв качество. С каждым пройденным
+                        обучением я всё больше понимала насколько каждый человек и его движение уникальны и это важно
+                        учитывать в тренировочном процессе.Грамотно построена тренировка должна работать на Вас, а не Вы
+                        на нее</p>
+                </div>
             </div>
             <div class="second-section-conteiner-content2">
-                <img class="second-section-img" src="assets\images\checkmark.png" alt="Checkmark">
-                <h2  class="ui-text__h-2sect">Опыт и гарантия результата</h2>
-                <p class="ui-text__p-2sect">Свою тренерскую деятельность начала в 2014 году в рядах инструкторов групповых
-                    программ. <br>
-                    Гибкость в индивидуальном подходе к каждому клиенту - мой приоритет. Веду каждого клиента по
-                    программе контроля за режимом тренировок до достижения оптимального результата.</p>
+                <div class="checkmark-h2-box">
+                    <img class="second-section-img" src="assets\images\checkmark-svg.svg" alt="Checkmark">
+                    <h2 class="ui-text__h-2sect">Мое образование</h2>
+                </div>
+                <div class="second-section-conteiner-content-text">
+                    <p class="ui-text__p-2sect">Являюсь сертифицированным персональным тренером FPA.
+                        Специалист по движению Polestar Pilates
+                        Специалист по биомеханике и осанке
+                        Закончила обучение в школе Анны Ворониной Crow Scholl
+                        Прошла обучение CAFS (функционально-прикладной науке) от Gray Institute USA
+                        Прошла повышение квалификации работы с гирями и TRX
+                        Прослушала базовый курс по диагностике и работе со сколиозо.</p>
+                </div>
+            </div>
+            <div class="second-section-conteiner-content3">
+                <div class="checkmark-h2-box">
+                    <img class="second-section-img" src="assets\images\checkmark-svg.svg" alt="Checkmark">
+                    <h2 class="ui-text__h-2sect">Моя специализация</h2>
+                </div>
+                <div class="second-section-conteiner-content-text">
+                    <p class="ui-text__p-2sect">Восстановление базовых двигательных функций тела и работа с имеющимися
+                        мышечными компенсациями.
+                        Работа с осанкой через улучшение основных базовых паттернов человека (шаг, дыхание, бросок,
+                        прыжок).
+                        Послеродовое восстановление (в том числе работа с мышцами тазовой диафрагмы).
+                        Миофасциальный релиз.
+                        Силовой и функциональный тренинг.
+                        Улучшение точности, баланса и координации (улучшение работы мозжечка).
+                        Укрепление мышечного корсета.
+                        Снижение жирового компонента.
+                        Рекомендации по питанию.</p>
+                </div>
             </div>
         </section>
         <!--Конец секции "Обо мне"-->
+        <!--Начало секции "Дипломы и сертификаты"-->
         <section class="third-section" id="certificates">
             <h1 class="ui-text__h1">Дипломы и сертификаты</h1>
-            <!--Здесь будут сертификаты-->
-            <img src="./assets/images/certificate1.png" alt="certificate">
+            <div class="carousel-container" data-carousel>
+                <button class="prev-button" data-carousel-button="prev">
+                    <img class="carousel-button-img" src="./assets/images/left-arrow.svg" alt="left-arrow">
+                </button>
+                <button class="next-button" data-carousel-button="next">
+                    <img class="carousel-button-img" src="./assets/images/right-arrow.svg" alt="right-arrow">
+                </button>
+                <ul class="slide-container" data-slides>
+                    <li class="slide">
+                        <img class="carousel-container__track-item"
+                        src="./assets/images/certificates/certificate-addedu.jpg" alt="certificate-addedu">
+                    </li>
+                    <li class="slide" data-active>
+                        <img class="carousel-container__track-item"
+                        src="./assets/images/certificates/diploma-retraining.jpg" alt="diploma-retraining">
+                    </li>
+                    <li class="slide">
+                        <img class="carousel-container__track-item"
+                        src="./assets/images/certificates/certificate-cafs.jpg" alt="certificate-cafs">
+                    </li>
+                    <li class="slide">
+                        <img class="carousel-container__track-item"
+                        src="./assets/images/certificates/certificate-crowschool.jpg"
+                        alt="certificate-crowschool">
+                    </li>
+                    <li class="slide">
+                        <img class="carousel-container__track-item"
+                        src="./assets/images/certificates/certificate-polestar.jpg" alt="certificate-polestar">
+                    </li>
+                        <li class="slide">
+                        <img class="carousel-container__track-item"
+                        src="./assets/images/certificates/certificate-scoliosis.jpg"
+                        alt="certificate-scoliosis">
+                    </li>
+                    <li class="slide">
+                        <img class="carousel-container__track-item"
+                        src="./assets/images/certificates/diploma-truemotion.jpg" alt="diploma-truemotion">
+                    </li>
+                </ul>
+            </div>
         </section>
+        <!--Конец секции "Дипломы и сертификаты"-->
         <section class="fourth-section" id="work">
-            <h1 class="fourth__tittle_desk ui-text__h1">Как я работаю</h1>
-            <div class="stage">
-                <div class="stage__consultation">
+            <h1 class="ui-text__h1">Как я работаю</h1>
+            <div class="fourth-section-stage">
+                <div class="fourth-section-stage__consultation">
                     <div class="circle">
                         <p class="ui-text__numbers">1</p>
                     </div>
-                    <p class="stage__text ui-text__p-4sect">вы записываетесь на консультацию</p>
+                    <p class="ui-text__p-4sect">вы записываетесь на консультацию</p>
                 </div>
-                <div class="arrow">
+                <div class="arrow arrow_first">
                     <div></div>
                 </div>
-                <div class="stage__goals">
+                <div class="fourth-section-stage__goals">
                     <div class="circle">
                         <p class="ui-text__numbers">2</p>
                     </div>
-                    <p class="stage__text ui-text__p-4sect">определяем цели и удобный формат тренировок</p>
+                    <p class="ui-text__p-4sect">определяем цели и удобный формат тренировок</p>
                 </div>
-                <div class="arrow">
+                <div class="arrow arrow_second">
                     <div></div>
                 </div>
-                <div class="stage__posture">
+                <div class="fourth-section-stage__posture">
                     <div class="circle">
                         <p class="ui-text__numbers">3</p>
                     </div>
-                    <p class="stage__text ui-text__p-4sect">проводим диагностику осанки</p>
+                    <p class="ui-text__p-4sect">проводим диагностику осанки</p>
                 </div>
-                <div class="arrow">
+                <div class="arrow arrow_third">
                     <div></div>
                 </div>
-                <div class="stage__start">
+                <div class="fourth-section-stage__start">
                     <div class="circle">
                         <p class="ui-text__numbers">4</p>
                     </div>
-                    <p class="stage__text ui-text__p-4sect">начинаем тренироваться и вместе идём к результату</p>
+                    <p class="ui-text__p-4sect">начинаем тренироваться и вместе идём к результату</p>
                 </div>
             </div>
-            <form action="#" target="_blank">
-                <button type="button" class="btn fourth__button ui-btn__4sect">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</button>
-            </form>
-        </section>
-        <section class="fifth-section">
-            <h1 class="ui-text__h1">Что нужно для онлайн занятий</h1>
-            <div class="sixth-section_left">
-                <img src="./assets/images/photo6.png" alt="фото">
-            </div>
-            <div class="sixth-section_right">
-                <div>
-                    <div>
-                        <img src="./assets/images/wifi.svg" alt="wifi">
-                    </div>
-                    <div>
-                        <h2 class="ui-text__h-5sect">Доступ к интернету</h2>
-                        <p class="ui-text__p-5sect">Вы можете подключиться к онлайн-тренировке с любого устройства: смартфона, ноутбука или
-                            smart.tv</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./assets/images/man.svg" alt="человечек">
-                    </div>
-                    <h2 class="ui-text__h-5sect">Пространство 2 на 2 метра</h2>
-                    <p class="ui-text__p-5sect">Минимальное пространство, в котором можно установить ноутбук или смартфон на расстоянии 1,5-2
-                        метра от вас</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="./assets/images/rug.svg" alt="коврик">
-                    </div>
-                    <h2 class="ui-text__h-5sect">Минимальный инвентарь</h2>
-                    <p class="ui-text__p-5sect">Отлично, если есть коврик для фитнеса и гантели. Если нет — можно их заменить пледом или ковром и
-                        бутылками с водой</p>
-                </div>
+            <div>
+                <a href="https://t.me/Maks_anastasiya" target="_blank"
+                    class="btn fourth-section-button ui-btn__4sect">ЗАПИСЬ НА КОНСУЛЬТАЦИЮ</a>
             </div>
         </section>
+
+<!--Начало 5 секции-->
+<section class="fifth-section">
+    <h1 class="ui-text__h1">Что нужно для онлайн занятий</h1>
+    <div class="fifth-section_left">
+        <img class="fifth-section-img" src="./assets/images/photo6.png" alt="фото">
+    </div>
+    <div class="fifth-section_right">
+        <div class="fifth-section-block">
+                <img class="fifth-section-icons" src="./assets/images/wifi.svg" alt="wifi">
+            <div class="fifth-section-text">
+                <h2 class="ui-text__h-5sect">Доступ к интернету</h2>
+                <p class="ui-text__p-5sect">Вы можете подключиться к онлайн-тренировке с любого устройства: смартфона, ноутбука или smart.tv</p>
+            </div>
+        </div>
+        <div class="fifth-section-block">
+                <img class="fifth-section-icons" src="./assets/images/man.svg" alt="человечек">
+            <div class="fifth-section-text">
+            <h2 class="ui-text__h-5sect">Пространство 2 на 2 метра</h2>
+            <p class="ui-text__p-5sect">Минимальное пространство, в котором можно установить ноутбук или смартфон на расстоянии 1,5-2 метра от вас</p>
+        </div>
+    </div>
+    <div class="fifth-section-block">
+                <img class="fifth-section-icons" src="./assets/images/rug.svg" alt="коврик">
+            <div class="fifth-section-text">
+            <h2 class="ui-text__h-5sect">Минимальный инвентарь</h2>
+            <p class="ui-text__p-5sect">Отлично, если есть коврик для фитнеса и гантели. Если нет — можно их заменить пледом или ковром и бутылками с водой</p>
+        </div>
+    </div>
+</div>
+</section>
+<!--Конец 5 секции-->
+
+        <!--Начало секции "Отзывы"-->
         <section class="sixth-section" id="reviews">
-            <h1 class="ui-text__h1">Отзывы и результаты клиентов</h1>
-            <div class="eighth-section_review">
-                <div class="eighth-section_review-content ui-text__p-6sect">
-                    <p>Хожу на тенировки больше 6 месяцев к Анастасии. Она помогла мне полностью восстановиться после
-                        родов и привести тело в норму. Каждая последующая тренировка отличается от предыдущей. У Насти
-                        комплексный подход к тренировкам, а не просто тягать железо.</p>
+            <h1 class="sixth-section_title ui-text__h1">Отзывы и результаты</h1>
+            <div class="reviews-content">
+                <div class="reviews-content_block">
+                    <div class="reviews-content_text ui-text__p-6sect">
+                        <img src="./assets/images/review1.png" alt="review">
+                    </div>
                 </div>
-                <p class="eighth-section_review-author ui-text__review-name">Анна Карелина</p>
-            </div>
-            <div class="eighth-section_review">
-                <div class="eighth-section_review-content ui-text__p-6sect">
-                    <p>Анастасия - супер профессионал своего дела! Исправила мне моё травмированное колено, у неё
-                        индивидуальный подход к проблеме и тренировке, очень интересные и действенные упражнения. Очень
-                        приятная в общении, очаровательная девушка. Хожу к ней уже второй год и не променяю ни на кого!
-                    </p>
+                <div class="reviews-content_block">
+                    <div class="reviews-content_text ui-text__p-6sect">
+                        <img src="./assets/images/review2.png" alt="review">
+                    </div>
                 </div>
-                <p class="eighth-section_review-author ui-text__review-name">Юлия Харитонова</p>
-            </div>
-            <div class="eighth-section_review">
-                <div class="eighth-section_review-content ui-text__p-6sect">
-                    <p>Настя занимается с моим ребёнком около года. За это время я вижу значительный прогресс в осанке
-                        после диагностированного сколиоза, спасибо огромное за этот результат, такой важный для здоровья
-                        моей дочери!</p>
+                <div class="reviews-content_block">
+                    <div class="reviews-content_text ui-text__p-6sect">
+                        <img src="./assets/images/review3.png" alt="review">
+                    </div>
                 </div>
-                <p class="eighth-section_review-author ui-text__review-name">Александра Смирнова</p>
+                <div class="reviews-content_block">
+                    <div class="reviews-content_text ui-text__p-6sect">
+                        <img src="./assets/images/review4.png" alt="review">
+                    </div>
+                </div>
             </div>
         </section>
-<<<<<<< Updated upstream
-=======
         <!--Конец секции "Отзывы"-->
         
-        <!--Начало секции "До и после"-->
->>>>>>> Stashed changes
-        <section class="seventh-section">
+
+
+
+         <!--Начало секции "До и после"-->
+         <section class="seventh-section" id="results">
+
             <h1 class="ui-text__h1">До и после</h1>
-            <img src="./assets/images/res1.jpg" alt="result">
-            <img src="./assets/images/res2.jpg" alt="result">
-            <img src="./assets/images/res3.jpg" alt="result">
-            <img src="./assets/images/res4.jpg" alt="result">
+<div class="carousel-container" data-carousel>
+                <button class="prev-button" data-carousel-button="prev">
+                    <img class="carousel-button-img" src="./assets/images/left-arrow.svg" alt="left-arrow">
+                </button>
+                <button class="next-button" data-carousel-button="next">
+                    <img class="carousel-button-img" src="./assets/images/right-arrow.svg" alt="right-arrow">
+                </button>
+           <ul class="slide-container" data-slides>
+                    <li class="slide">
+                        <img class="carousel-container__track-item"
+                        <img src="./assets/images/res1.jpg" alt="result">
+                    </li>
+                    <li class="slide" data-active>
+                        <img src="./assets/images/res2.jpg" alt="result">
+                    </li>
+                    <li class="slide">
+                        <img src="./assets/images/res3.jpg" alt="result">
+                    </li>
+                    <li class="slide">
+                       <img src="./assets/images/res4.jpg" alt="result">
+                    </li>
+                    <li class="slide">
+                        <img src="./assets/images/res5.jpg" alt="result">
+                    </li>
+                        <li class="slide">
+                        <img src="./assets/images/res6.jpg" alt="result">
+                    </li>
+                 </ul>
+            </div>
         </section>
         <!--Конец секции "До и после"-->
     </main>
@@ -197,23 +314,22 @@
     <footer class="footer" id="contacts">
         <h1 class="ui-text__h-footer-contacts footer__header">Контакты</h1>
         <div class="footer__text">
-            <p class="ui-text__p-footer">Записаться на консультацию и занятия вы можете любым удобным для вас способом. Буду рада обратной связи и
-                вашим вопросам.</p>
-        </div>
-        <div class="footer__contacts">
-            <p class="ui-text__p-footer-contacts">Адрес фитнес-клуба для очных тренировок:</p>
-            <p class="ui-text__p-footer-contacts">Москва, Липовый парк 2а,</p>
-            <p class="ui-text__p-footer-contacts">E-mail:<a href="mailto:" class="footer__contacts-mail">Ссылка на почту</a></p>
-            <p class="ui-text__p-footer-contacts">Телефон:<a href="tel:+79119109880" class="footer__contacts-phone">+7 (911) 910 98 80</a></p>
+            <p class="ui-text__p-footer">Записаться на консультацию и занятия вы можете <br> любым удобным для вас
+                способом. Буду рада обратной <br> связи и вашим вопросам.
+            </p>
         </div>
         <div class="footer__social">
-            <p class="ui-text__p-footer-restrict">*социальная сеть instagram принадлежит компании Meta, признанной экстремистской в РФ</p>
-            <!--Здесь будут иконки соц.сетей-->
-            <a href="#">TG</a>
-            <a href="#">IG</a>
-            <a href="#">WA</a>
+            <p class="ui-text__p-footer-restrict">*социальная сеть instagram принадлежит компании <br> Meta, признанной
+                экстремистской в РФ</p>
+            <a href="https://t.me/Maks_anastasiya"><img class="footer__social-link" src="assets/images/icon_tg.png"
+                    alt="telegram"></a>
+            <a href="https://www.instagram.com/stacey__fitness"><img class="footer__social-link"
+                    src="assets/images/icon_inst.png" alt="instagram"></a>
         </div>
     </footer>
+     <!-- КНОПКА ВВЕРХ -->
+  <a href="#" class="totop"><i class="fa-solid fa-circle-up"></i></a>
+  <!-- КНОПКА ВВЕРХ -->
 </body>
 
 </html>

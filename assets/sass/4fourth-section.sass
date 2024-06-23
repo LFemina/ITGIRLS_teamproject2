@@ -4,27 +4,27 @@
     flex-direction: column
     text-align: center
 
-.fourth__button
-    width: 23.873125rem
+    &-button
+        width: 23.873125rem
 
-.stage
-    display: flex
-    width: 100%
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    gap: 2rem
-
-    &__consultation,
-    &__goals,
-    &__posture,
-    &__start
+    &-stage
         display: flex
-        width: 24.375rem
-        align-items: center
-        align-content: center
-        justify-content: center
+        width: 100%
         flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 2rem
+
+        &__consultation,
+        &__goals,
+        &__posture,
+        &__start
+            display: flex
+            width: 24.375rem
+            align-items: center
+            align-content: center
+            justify-content: center
+            flex-direction: column
 
 .circle
     display: flex
@@ -72,27 +72,108 @@
 
 @media screen and (min-width: 700px)
     .fourth-section
-        gap: 4rem
+        gap: 64px
+        padding: 90px 0 60px 0
 
-    .stage
-        display: flex
-        width: 100%
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        gap: 0
+        &-button
+            width: 382px
 
-        &__consultation,
-        &__goals,
-        &__posture,
-        &__start
-            width: 13.75rem
+        &-stage
+            display: grid
+            grid-template-columns: 220px 200px 220px 200px 220px 200px 220px
+            grid-template-rows: 1fr
+            width: 100%
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            gap: 0
+
+            &__consultation
+                grid-column: 1/2
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
+            &__goals
+                grid-column: 3/4
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
+            &__posture
+                grid-column: 5/6
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
+            &__start
+                grid-column: 7/8
+                grid-row: 1/2
+
+                .circle
+                    grid-row: 1/2
+
+                .ui-text__p-4sect
+                    grid-row: 2/3
+                    align-self: center
+
+            &__consultation,
+            &__goals,
+            &__posture,
+            &__start
+                width: 220px
+                display: grid
+                grid-template-rows: 190px 110px
+
+    .circle
+        width: 160px
+        height: 160px
+        line-height: 160px
+        justify-self: center
+        text-align: center
+        border-radius: 50%
+        border: 10px solid #d6c6f5
+        margin-top: 16px
 
     .arrow
         transform: rotate(0deg)
         position: relative
         top: 0
-        width: 16.4375rem
-        height: 0.2rem
+        width: 200px
+        height: 3px
         background-color: #000000
         left: 0
+
+        &::after
+            width: 6px
+            height: 2px
+            top: -2px
+            right: -1px
+
+        &::before
+            width: 7px
+            height: 2px
+            top: 2px
+            right: -2px
+
+        &_first
+            grid-area: 1/2/2/3
+        &_second
+            grid-area: 1/4/2/5
+        &_third
+            grid-area: 1/6/2/7
