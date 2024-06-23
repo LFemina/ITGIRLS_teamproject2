@@ -1,6 +1,5 @@
 .seventh-section
     padding-bottom: 1rem
-    
 
 .carousel-container
     position: relative
@@ -19,7 +18,7 @@ ul
     border-radius: 50%
     border: none
     cursor: pointer
-    background-color: #c5acf7
+    background-color: #ffffff
     display: flex
     justify-content: center
     align-items: center
@@ -27,10 +26,10 @@ ul
     top: 40%
 
 .prev-button
-    left: 3%
+    left: 2%
 
 .next-button
-    right: 3%
+    right: 2%
 
 .carousel-button-img
     width: 0.5rem
@@ -46,9 +45,8 @@ ul
 
 img
     display: block
-    max-width: 99%
+    max-width: 70%
     object-fit: cover
-    padding: 1rem
     object-position: center
 
 .slide[data-active]
@@ -56,11 +54,10 @@ img
 
 @media screen and (min-width: 700px)
     .carousel-container
-        height: 530px
+        height: 550px
     .slide
         img
-            height: 530px
-            padding: 0
+            height: 550px
 
     .prev-button
         left: 20%
@@ -69,16 +66,14 @@ img
         right: 20%
 
     .slide-container
-        height: 530px
+        max-height: 580px
 
     .prev-button, .next-button
         width: 40px
         height: 40px
 
     .carousel-button-img
-        width: 12px
-
-
+        width: 20px
 
 /* КНОПКА ВВЕРХ */
 .totop
@@ -96,7 +91,3 @@ img
     font-size: 40px
     position: sticky
     scroll-behavior: smooth
-    
-/* @media screen and (min-width: 700px)
-        .totop
-        width: 12px
