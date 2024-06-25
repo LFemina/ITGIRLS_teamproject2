@@ -1,44 +1,76 @@
+
 .fifth-section
     display: flex
     flex-direction: column
     width: 100%
-
+    padding-top: 5.625rem
 
 .ui-text__h1
     text-align: center
 
-.fifth-section-img
-    max-width: 100%
+.fifth-section_left
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
 
+.photo-block
+    max-width: 24.375rem
+    margin-bottom: 4.6875rem
+
+.fifth-section-img
+    width: 100%
+    padding-inline: 1.25rem
+
+.fifth-section_right
+    display: flex
+    flex-direction: column
+    padding-right: 1.25rem
 
 .fifth-section-block
-    display: grid  
-    grid-template-columns: 1fr 2fr
+    display: grid
+    grid-template-columns: 1fr 3fr
 
 .fifth-section-icons
     grid-column: 1/2
-    grid-row: 1/2
-    width: 100px
+    width: 6.25rem
 
 .fifth-section-text
     grid-column: 2/3
-    grid-row: 1/2
 
 @media screen and (min-width: 700px)
     .fifth-section
+        height: 948px
         display: grid
-        grid-template-columns: 50vw 50vw
-        grid-template-rows: 10vw 90vw
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 147px 1fr
+        padding-top: 90px
 
     .ui-text__h1
-        grid-row: 1/3
+        grid-row: 1/2
         grid-column: 1/3
+        justify-content: flex-start
 
     .fifth-section_left
         grid-row: 2/3
         grid-column: 1/2
+        align-items: flex-end
+
+    .test
+        max-width: 560px
+        margin-bottom: 0
+
+    .fifth-section-img
+        padding-inline: 0
 
     .fifth-section_right
         grid-row: 2/3
         grid-column: 2/3
-        padding: 25% 25% 0 0
+        align-items: flex-start
+        justify-content: center
+        padding-right: 300px
+        row-gap: 30px
+
+    .fifth-section-icons
+        width: 80px
+        justify-self: center
