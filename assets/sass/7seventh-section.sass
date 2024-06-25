@@ -6,7 +6,13 @@
     overflow: hidden
     height: 15rem
 
-ul
+    &__track-item
+        display: block
+        max-width: 70%
+        object-fit: cover
+        object-position: center
+
+.slide-container
     margin: 0
     padding: 0
     list-style: none
@@ -43,18 +49,13 @@ ul
     opacity: 0
     transition: opacity 0.5s ease
 
-img
-    display: block
-    max-width: 70%
-    object-fit: cover
-    object-position: center
-
 .slide[data-active]
     opacity: 1
 
 @media screen and (min-width: 700px)
     .carousel-container
         height: 550px
+
     .slide
         img
             height: 550px
