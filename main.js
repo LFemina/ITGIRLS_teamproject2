@@ -17,7 +17,6 @@
     }
   }
 
-
   let supportsPassive = false;
 
   try {
